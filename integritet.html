@@ -8,55 +8,71 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <header>
-    <div class="brand">
-      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect x="3" y="3" width="28" height="28" rx="3" fill="none" stroke="var(--accent)" stroke-width="3"/><path d="M17 3v13h14M3 20h8" fill="none" stroke="var(--accent)" stroke-width="3"/></svg>
-      Planskiss
-    </div>
-    <nav><a href="./">Support</a><a href="integritet.html">Integritetspolicy</a></nav>
-  </header>
-
-  <h1>Integritetspolicy</h1>
-  <p class="muted">Senast uppdaterad 28 september 2026</p>
-
-  <div class="card">
-    <p><strong>Kort sagt:</strong> Planskiss har inget konto, ingen reklam, ingen analys och ingen spårning. Dina ritningar sparas på din enhet och i din egen iCloud. Jag som utvecklare tar inte emot några uppgifter om dig.</p>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html"><svg width="28" height="28" viewBox="0 0 34 34" aria-hidden="true"><rect x="3" y="3" width="28" height="28" rx="5" fill="none" stroke="var(--accent)" stroke-width="3"/><path d="M17 3v13h14M3 20h8" fill="none" stroke="var(--accent)" stroke-width="3"/></svg>Planskiss</a>
+    <nav class="site-nav" aria-label="Huvudmeny"><a href="support.html">Support</a><a href="integritet.html" aria-current="page">Integritet</a><a href="villkor.html">Villkor</a></nav>
   </div>
+</header>
+<main>
+<h1>Integritetspolicy</h1>
+<p class="muted">Senast uppdaterad 6 november 2026</p>
 
-  <h2>Personuppgiftsansvarig</h2>
-  <p>Pierre Smedberg, Sverige. Kontakt: <a href="mailto:pierresmedberg@icloud.com">pierresmedberg@icloud.com</a>.</p>
+<div class="card">
+  <p><strong>Kort sagt:</strong> Dina ritningar sparas på din telefon och i din egen iCloud – inte hos mig. Planskiss har ingen reklam, ingen spårning och ingen analys. Bara när du använder AI-tolkningen skickas en bild via min server för att tolkas, och den sparas inte efteråt.</p>
+</div>
 
-  <h2>Dina ritningar och projekt</h2>
-  <p>Projekt, ritningar, mått, anteckningar och underlagsbilder sparas lokalt på din enhet. Om iCloud är påslaget säkerhetskopieras de till din privata iCloud-lagring hos Apple. Jag har ingen åtkomst till dem.</p>
+<h2>Personuppgiftsansvarig</h2>
+<p>Pierre Smedberg, Sverige. Kontakt: <a href="mailto:pierresmedberg@icloud.com">pierresmedberg@icloud.com</a>.</p>
 
-  <h2>Behörigheter i appen</h2>
-  <ul>
-    <li><strong>Plats</strong> – används bara för att döpa ett nytt projekt efter gatuadressen. Adressen slås upp via Apples karttjänst och sparas bara i projektet på din enhet.</li>
-    <li><strong>Kamera</strong> – för att fotografera en pappersritning som underlag. Bilden sparas bara i appen.</li>
-    <li><strong>Bilder</strong> – appen kan bara lägga till exporterade ritningar i ditt bildbibliotek. Den läser inte dina bilder.</li>
-    <li><strong>Bluetooth</strong> – för att ta emot mått från en lasermätare. Måtten stannar på enheten.</li>
-  </ul>
-  <p>Alla behörigheter är frivilliga och kan stängas av i iPhonens inställningar.</p>
+<h2>Dina ritningar och projekt</h2>
+<p>Projekt, ritningar, mått, anteckningar och underlagsbilder sparas lokalt på din enhet. Om iCloud är påslaget säkerhetskopieras de till din privata iCloud-lagring hos Apple, enligt Apples villkor. Jag har ingen åtkomst till dem.</p>
 
-  <h2>Tjänster som du själv väljer att använda</h2>
-  <ul>
-    <li><strong>AI-tolkning (valfri)</strong> – om du lägger in en egen API-nyckel från Anthropic och startar en tolkning skickas bilden av ritningen direkt från din enhet till Anthropic (api.anthropic.com). Där behandlas den enligt Anthropics villkor och integritetspolicy. Nyckeln sparas i enhetens nyckelring. Jag tar inte del av bilden eller resultatet.</li>
-    <li><strong>Skicka till DIAKRIT</strong> – öppnar DIAKRIT:s webbportal i appen. Det du laddar upp där skickas till DIAKRIT via ditt eget konto och behandlas enligt DIAKRIT:s villkor.</li>
-    <li><strong>Dela och exportera</strong> – när du delar en ritning via AirDrop, Mail, Meddelanden eller liknande går den till den mottagare du själv väljer.</li>
-  </ul>
+<h2>AI-tolkning</h2>
+<p>AI-tolkningen är frivillig. När du startar en tolkning skickas bilden eller bilderna du valt, och vid en dubbelkoll även den uppritade planen, till min server hos Supabase i EU (Stockholm). Servern skickar dem vidare till Anthropic, som tolkar bilden med sin AI-modell och skickar tillbaka ett förslag på planritning. Bilderna sparas inte på min server efter tolkningen. Anthropic behandlar bilderna enligt sina villkor för API-kunder och använder dem inte för att träna sina modeller. Rättslig grund: att tillhandahålla tjänsten du ber om (avtal).</p>
+<p>För att kunna begränsa och fördela tolkningarna används följande, utan bildinnehåll:</p>
+<ul>
+  <li><strong>Apples DeviceCheck</strong> – bekräftar att anropet kommer från en äkta enhet och håller räkningen på de gratis tolkningarna i Apples DeviceCheck-tjänst. Det innehåller inga personuppgifter som namn eller e-post, och jag kan inte identifiera dig eller din enhet med det.</li>
+  <li><strong>Vid Pro</strong> – abonnemangets transaktions-id från App Store, så att månadskvoten kan räknas. Jag får inte ditt namn, din e-post eller dina betaluppgifter; köpet hanteras helt av Apple.</li>
+  <li><strong>Kvot- och kostnadsloggar</strong> – tidpunkt, nivå (gratis, Pro eller konto), antal tolkningar och kostnad per anrop, samt tillfälligt IP-adress för att stoppa missbruk. Loggarna innehåller aldrig bilderna eller resultatet och sparas bara så länge de behövs för kvot, kostnadsuppföljning och missbruksskydd.</li>
+</ul>
 
-  <h2>Dina rättigheter</h2>
-  <p>Eftersom jag inte lagrar några uppgifter om dig finns det inget hos mig att lämna ut eller radera. Du tar bort dina uppgifter genom att radera projekten i appen, eller appen och dess iCloud-data. Frågor besvaras på adressen ovan. Du har också rätt att lämna klagomål till Integritetsskyddsmyndigheten (<a href="https://www.imy.se">imy.se</a>).</p>
+<h2>Inbjudna konton</h2>
+<p>Vissa användare bjuds in till ett konto, som skapas av mig. Det går inte att registrera sig i appen. För ett inbjudet konto sparas e-postadressen och kontots behörigheter hos Supabase i EU (Stockholm), och e-postadressen används för att skicka inloggningskoden. Kontot raderas om du ber om det.</p>
 
-  <h2>Ändringar</h2>
-  <p>Om appen börjar hantera uppgifter på ett nytt sätt uppdateras den här sidan och datumet ovan.</p>
+<h2>Behörigheter i appen</h2>
+<ul>
+  <li><strong>Plats</strong> – används bara för att föreslå adressen när du skapar ett nytt projekt. Adressen slås upp via Apples karttjänst. Platsen lämnar inte enheten till mig.</li>
+  <li><strong>Kamera</strong> – för att fotografera en ritning som underlag. Bilden sparas i projektet på enheten och skickas bara vidare om du själv startar en AI-tolkning.</li>
+  <li><strong>Bilder</strong> – för att välja en bild som underlag och för att spara exporterade ritningar i ditt bildbibliotek.</li>
+  <li><strong>Notiser</strong> – lokala påminnelser som skapas och visas på enheten. Inga notiser skickas från en server.</li>
+</ul>
+<p>Alla behörigheter är frivilliga och kan stängas av i iPhonens inställningar.</p>
 
-  <hr>
-  <h2 lang="en">Summary in English</h2>
-  <p lang="en">Planskiss has no accounts, ads, analytics or tracking. Drawings are stored on your device and in your private iCloud; the developer receives no data about you. Location is only used to name new projects after the street address. If you choose the optional AI interpretation with your own Anthropic API key, the drawing image is sent directly to Anthropic. The "Send to DIAKRIT" option opens DIAKRIT's web portal, where uploads go to DIAKRIT under your own account. Contact: <a href="mailto:pierresmedberg@icloud.com">pierresmedberg@icloud.com</a> (Pierre Smedberg, Sweden).</p>
+<h2>Sådant du själv väljer att dela</h2>
+<ul>
+  <li><strong>Dela och exportera</strong> – när du delar en ritning via AirDrop, Mail, Meddelanden eller liknande går den till den mottagare du väljer.</li>
+  <li><strong>Supportmejl och loggar</strong> – om du mejlar mig eller väljer att dela en felrapport eller logg från appen får jag det du skickar. Jag använder det bara för att svara och felsöka, och raderar det när ärendet är klart.</li>
+</ul>
 
-  <footer>© 2026 Pierre Smedberg · <a href="./">Support</a></footer>
+<h2>Ingen reklam, spårning eller analys</h2>
+<p>Planskiss visar ingen reklam, använder inga analys- eller spårningsverktyg och säljer eller delar inga uppgifter med annonsörer.</p>
+
+<h2>Dina rättigheter</h2>
+<p>Enligt dataskyddsförordningen (GDPR) har du rätt att få veta vilka uppgifter som behandlas om dig, få dem rättade eller raderade, invända mot behandlingen och få ut dina uppgifter. Mejla <a href="mailto:pierresmedberg@icloud.com">pierresmedberg@icloud.com</a>. Ritningarna på telefonen och i iCloud raderar du själv genom att ta bort projekten eller appen. Du har också rätt att lämna klagomål till Integritetsskyddsmyndigheten (<a href="https://www.imy.se">imy.se</a>).</p>
+
+<h2>Ändringar</h2>
+<p>Om appen börjar hantera uppgifter på ett nytt sätt uppdateras den här sidan och datumet ovan.</p>
+
+<hr>
+<h2 lang="en">Summary in English</h2>
+<p lang="en">Planskiss has no ads, analytics or tracking. Drawings are stored on your device and in your private iCloud. If you use the optional AI interpretation, the selected image is sent to our server (Supabase, EU/Stockholm) and on to Anthropic for interpretation; it is not stored after the interpretation. To limit free use we use Apple's DeviceCheck (no personal data) and, for Pro, the subscription's transaction ID; quota and cost logs contain no image content. Invited accounts store an email address. Location is only used on the device to suggest an address via Apple. Contact: <a href="mailto:pierresmedberg@icloud.com">pierresmedberg@icloud.com</a> (Pierre Smedberg, Sweden).</p>
 </main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>© 2026 Pierre Smedberg</span>
+    <nav aria-label="Sidfot"><a href="index.html">Planskiss</a><a href="support.html">Support</a><a href="integritet.html">Integritetspolicy</a><a href="villkor.html">Användarvillkor</a><a href="mailto:pierresmedberg@icloud.com?subject=Planskiss">Kontakt</a></nav>
+  </div>
+</footer>
 </body>
 </html>

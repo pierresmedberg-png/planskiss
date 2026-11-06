@@ -3,60 +3,139 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Planskiss – Support</title>
-<meta name="description" content="Support för Planskiss, appen för att rita planritningsunderlag på plats.">
+<title>Planskiss</title>
+<meta name="description" content="Planskiss – rita planskisser med fingret på iPhone. Mått, dörrar, fönster och symboler, foto av gammal ritning som underlag och export som JPG eller PDF.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <header>
-    <div class="brand">
-      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect x="3" y="3" width="28" height="28" rx="3" fill="none" stroke="var(--accent)" stroke-width="3"/><path d="M17 3v13h14M3 20h8" fill="none" stroke="var(--accent)" stroke-width="3"/></svg>
-      Planskiss
-    </div>
-    <nav><a href="./">Support</a><a href="integritet.html">Integritetspolicy</a></nav>
-  </header>
-
-  <h1>Support</h1>
-  <p>Planskiss är en app för iPhone och iPad där du ritar planritningsunderlag direkt på plats med fingret: rum, mått, dörrar, fönster och inredning. Skissen exporteras som bild eller PDF.</p>
-
-  <div class="card">
-    <p><strong>Kontakta mig</strong></p>
-    <p>Har du frågor, hittat ett fel eller en idé? Mejla <a href="mailto:pierresmedberg@icloud.com?subject=Planskiss">pierresmedberg@icloud.com</a>. Skriv gärna vilken iPhone du har och bifoga en skärmdump om något ser fel ut. Jag svarar oftast inom ett par dagar.</p>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html"><svg width="28" height="28" viewBox="0 0 34 34" aria-hidden="true"><rect x="3" y="3" width="28" height="28" rx="5" fill="none" stroke="var(--accent)" stroke-width="3"/><path d="M17 3v13h14M3 20h8" fill="none" stroke="var(--accent)" stroke-width="3"/></svg>Planskiss</a>
+    <nav class="site-nav" aria-label="Huvudmeny"><a href="support.html">Support</a><a href="integritet.html">Integritet</a><a href="villkor.html">Villkor</a></nav>
   </div>
+</header>
+<main class="wide">
+<section class="hero">
+  <div>
+    <h1>Rita planen där du står.</h1>
+    <p class="lead">Planskiss är appen för att skissa planritningar med fingret på iPhone. Rum, mått, dörrar och fönster på plats – klart att skicka som bild eller PDF innan du har lämnat huset.</p>
+    <!-- APP STORE-LÄNK: när appen är publicerad, ersätt <span class="store-slot"> nedan med
+         <a class="store-slot" href="https://apps.apple.com/se/app/…">Hämta i App Store</a> -->
+    <span class="store-slot" role="note" aria-label="Hämta i App Store – länken kommer snart">
+      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a1 1 0 0 1 1 1v10.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.4l3.3 3.3V3a1 1 0 0 1 1-1Zm-8 17a1 1 0 0 1 1 1v0h14a1 1 0 1 1 0 2H5a2 2 0 0 1-2-2 1 1 0 0 1 1-1Z"/></svg>
+      Hämta i App Store
+    </span>
+    <span class="store-note muted">Snart i App Store för iPhone.</span>
+  </div>
+  <div class="hero-art">
+    <svg viewBox="0 0 300 600" role="img" aria-labelledby="art-t">
+      <title id="art-t">Illustration: en iPhone som visar en enkel planskiss med tre rum, dörrar, fönster och måttlinjer</title>
+      <rect x="6" y="6" width="288" height="588" rx="48" fill="var(--card)" stroke="var(--line)" stroke-width="3"/>
+      <rect x="110" y="22" width="80" height="22" rx="11" fill="var(--plan)" opacity="0.9"/>
+      <g transform="translate(40 150)" fill="none" stroke="var(--plan)" stroke-linecap="square">
+        <rect x="0" y="0" width="220" height="280" fill="var(--plan-fill)" stroke-width="7"/>
+        <path d="M120 0v150M0 150h60M95 150h125" stroke-width="4"/>
+        <path d="M60 150a35 35 0 0 1 35-35" stroke-width="1.5"/>
+        <path d="M95 150v-35" stroke-width="2"/>
+        <path d="M120 40a30 30 0 0 1 30 30" stroke-width="1.5"/>
+        <path d="M120 70h30" stroke-width="2"/>
+        <g stroke-width="2.5" stroke="var(--accent)">
+          <path d="M30 0h60M30 -3v6M90 -3v6"/>
+          <path d="M150 280h50M150 277v6M200 277v6"/>
+          <path d="M220 190v60M217 190h6M217 250h6"/>
+        </g>
+      </g>
+      <g fill="var(--muted)" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" text-anchor="middle">
+        <text x="100" y="230">Sovrum</text>
+        <text x="100" y="246" font-size="11">10,2 m²</text>
+        <text x="210" y="258">Badrum</text>
+        <text x="150" y="350">Kök &amp; vardagsrum</text>
+        <text x="150" y="366" font-size="11">28,4 m²</text>
+      </g>
+      <g fill="var(--accent)" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">
+        <text x="150" y="138">3,40</text>
+      </g>
+      <g transform="translate(150 500)">
+        <rect x="-110" y="-24" width="220" height="48" rx="24" fill="var(--accent-soft)"/>
+        <circle cx="-70" cy="0" r="8" fill="var(--accent)"/>
+        <circle cx="-25" cy="0" r="8" fill="none" stroke="var(--accent)" stroke-width="2.5"/>
+        <rect x="12" y="-8" width="16" height="16" rx="3" fill="none" stroke="var(--accent)" stroke-width="2.5"/>
+        <path d="M62 -8l12 16h-24z" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"/>
+      </g>
+    </svg>
+  </div>
+</section>
 
-  <h2>Vanliga frågor</h2>
+<h2 class="section-title">Allt du behöver för ett bra underlag</h2>
+<p class="section-lead">Byggt för att användas med en hand, på plats, i varje rum.</p>
+<div class="features">
+  <div class="feature">
+    <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20 18 6l-2-2L2 18v2h2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
+    <h3>Rita med fingret</h3>
+    <p>Dra upp rum och väggar direkt på skärmen. Hörn och linjer rätas upp åt dig, och allt går att ångra.</p>
+  </div>
+  <div class="feature">
+    <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h18M3 9v6M21 9v6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+    <h3>Exakta mått</h3>
+    <p>Skriv in väggarnas längder och lås dem. Ytan för varje rum räknas ut automatiskt.</p>
+  </div>
+  <div class="feature">
+    <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V4h14v16M5 20h14M15 12h1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+    <h3>Dörrar, fönster och symboler</h3>
+    <p>Lägg till dörrar, fönster, trappor, kök, badrum och möbler från en tydlig symbolmeny.</p>
+  </div>
+  <div class="feature">
+    <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.2" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
+    <h3>Gammal ritning som underlag</h3>
+    <p>Fotografera en befintlig planritning och rita ovanpå den, eller låt AI-tolkningen föreslå rummen åt dig.</p>
+  </div>
+  <div class="feature">
+    <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <h3>Export som JPG och PDF</h3>
+    <p>Spara i Bilder, dela via AirDrop, Mail eller Meddelanden, eller skapa en PDF. En kontrollista varnar för det som saknas.</p>
+  </div>
+  <div class="feature">
+    <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a4 4 0 0 1-.5-8 6 6 0 0 1 11.5 1.5A3.5 3.5 0 0 1 17.5 18Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
+    <h3>Dina ritningar är dina</h3>
+    <p>Projekten sparas på telefonen och i din egen iCloud. Inget konto, ingen reklam och ingen spårning.</p>
+  </div>
+</div>
 
-  <details>
-    <summary>Var sparas mina ritningar?</summary>
-    <p>På telefonen. Om iCloud är påslaget säkerhetskopieras projekten också till din egen iCloud, så att de följer med till en ny telefon. Ingen annan än du kommer åt dem.</p>
-  </details>
+<h2 class="section-title">Gratis att börja</h2>
+<p class="section-lead">Allt du behöver för att rita och skicka en planskiss ingår. Pro lägger till mer för dig som ritar ofta.</p>
+<div class="plans">
+  <div class="plan-card">
+    <h3>Gratis</h3>
+    <p class="tag">För alla</p>
+    <ul>
+      <li>Rita obegränsat med alla verktyg och symboler</li>
+      <li>Export som JPG och PDF i stilen Planritningsskiss</li>
+      <li>Dela, spara i Bilder och skicka direkt från appen</li>
+      <li>3 AI-tolkningar av fotograferade ritningar per telefon</li>
+    </ul>
+  </div>
+  <div class="plan-card pro">
+    <h3>Planskiss Pro</h3>
+    <p class="tag">Abonnemang per månad eller år – pris, se App Store</p>
+    <ul>
+      <li>Allt i Gratis</li>
+      <li>Alla exportstilar</li>
+      <li>Egen designprofil med egna färger</li>
+      <li>Planritningen i 3D, med möblering</li>
+      <li>30 AI-tolkningar per månad</li>
+    </ul>
+  </div>
+</div>
+<p class="muted center">Abonnemanget förnyas automatiskt och kan sägas upp när som helst i iPhonens inställningar. Läs mer i <a href="villkor.html">användarvillkoren</a>.</p>
 
-  <details>
-    <summary>Hur exporterar jag en ritning?</summary>
-    <p>Öppna projektet och tryck på exportknappen. Välj stil och plan, och spara sedan i Bilder, dela som PDF eller skicka via AirDrop, Mail eller Meddelanden. Kontrollistan i exportarket varnar för rum som saknar namn, dörr eller fönster.</p>
-  </details>
-
-  <details>
-    <summary>Jag råkade radera något – går det att ångra?</summary>
-    <p>Ja. I ritningen ångrar du med ångra-pilen. Raderade projekt kan återställas med Ångra-knappen som visas några sekunder efter raderingen.</p>
-  </details>
-
-  <details>
-    <summary>Hur fungerar AI-tolkningen?</summary>
-    <p>Funktionen är valfri. Du fotograferar en befintlig ritning och låter AI rita in rummen åt dig. Den kräver en egen API-nyckel från Anthropic, som du lägger in i appen. Resten av appen fungerar utan nyckel.</p>
-  </details>
-
-  <details>
-    <summary>Varför vill appen veta min plats?</summary>
-    <p>Platsen används bara för att döpa ett nytt projekt efter adressen du står på. Du kan neka, och då heter projektet "Nytt projekt" tills du döper om det.</p>
-  </details>
-
-  <hr>
-  <h2 lang="en">In English</h2>
-  <p lang="en">Planskiss is an app for sketching floor plan drafts on site. For support, questions or bug reports, email <a href="mailto:pierresmedberg@icloud.com?subject=Planskiss">pierresmedberg@icloud.com</a>.</p>
-
-  <footer>© 2026 Pierre Smedberg · <a href="integritet.html">Integritetspolicy</a></footer>
+<h2 class="section-title">Frågor?</h2>
+<p class="section-lead">Svar på vanliga frågor finns på <a href="support.html">supportsidan</a>. Du kan också mejla <a href="mailto:pierresmedberg@icloud.com?subject=Planskiss">pierresmedberg@icloud.com</a>.</p>
 </main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>© 2026 Pierre Smedberg</span>
+    <nav aria-label="Sidfot"><a href="index.html">Planskiss</a><a href="support.html">Support</a><a href="integritet.html">Integritetspolicy</a><a href="villkor.html">Användarvillkor</a><a href="mailto:pierresmedberg@icloud.com?subject=Planskiss">Kontakt</a></nav>
+  </div>
+</footer>
 </body>
 </html>
